@@ -6,7 +6,6 @@ fino a quando ne avrà tanti quanti l’altro.  */
 
 const array1 = [1, 2, 3, 4, 5, 7, 9, 6];
 const array2 = [6, 7, 8];
-let count = 0;
 
 while (array2.length < array1.length) {
   const randomNumber = Math.floor(Math.random() * 9) + 1;
