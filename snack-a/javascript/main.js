@@ -1,13 +1,11 @@
 "use strict";
 
-const elementi = [1, 2, 3, 4, 5, 6, 7, 8];
+const elementi = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
-let counter = 0;
-let string;
+const totCount = contaElementi(elementi);
 
-while (elementi[counter] !== undefined) {
-  string += elementi[counter];
-  console.log(elementi[counter]);
-  counter++;
-  //console.log(string);
+console.log(totCount);
+
+function contaElementi(array) {
+  return array.length;
 }
