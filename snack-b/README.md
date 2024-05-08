@@ -5,4 +5,4 @@ Scrivere una funzione trovaIndice() che, dati un array e un elemento in input, r
 - Dichiaro un array con degli elementi
 - Dichiaro una variabile che sarà l'elemento da cercare nell'array
 - Ciclo for per scorrere gli elementi dell'array
--
+- Confronto il contatore con l'input
