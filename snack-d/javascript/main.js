@@ -1,16 +1,16 @@
 "use strict";
 
 const arrayA = [1, 2, 3, 4, 5, 6];
-let arrayB = [];
 
 function rimuoviDallaCoda(array) {
-  let numbers = [];
+  let arrayB = [];
+  let arrayLength = array.length - 1;
 
-  for (let i = 0; i < array.length - 1; i++) {
-    numbers += array[i];
-    //console.log(numbers);
+  for (let i = 0; i < arrayLength; i++) {
+    arrayB[i] = array[i];
   }
-  return numbers;
+
+  return arrayB;
 }
 
 rimuoviDallaCoda(arrayA);
