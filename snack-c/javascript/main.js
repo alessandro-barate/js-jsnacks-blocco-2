@@ -18,17 +18,26 @@ const array = [
   "?",
 ];
 
-let string = arrayToString(array);
+let string = stampa(array);
 
-function arrayToString(input) {
-  for (let counter = 0; counter < input.length; counter++) {
+function stampa(input) {
+  const inputLength = input.length;
+  let result = "";
+
+  for (let counter = 0; counter < inputLength; counter++) {
     //console.log(input[counter]);
-    let characters;
-    characters += input[counter];
-    return input[counter];
+    result += input[counter];
+
+    if (counter < inputLength - 1) {
+      result += ",";
+    }
   }
+
+  return result;
 }
 
-arrayToString(array);
+stampa(array);
 
-console.log(string);
+let output = stampa(array);
+
+console.log(`${"La stringa è"} ${output}`);
