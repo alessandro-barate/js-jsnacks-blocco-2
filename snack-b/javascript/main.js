@@ -4,13 +4,13 @@
 const array = ["pane", "pasta", "acqua", "sale", "pomodoro", "tonno", "pepe"];
 
 // Elemento da cercare nell'array
-const inputElement = "mare";
+const inputElement = "acqua";
 
 // Funzione per scorrere nell'array e cercare l'elemento
 function trovaIndice(input) {
   for (let counter = 0; counter < array.length; counter++) {
     if (array[counter] === input) {
-      return counter;
+      return `${"La posizione è"} ${counter}`;
     }
   }
 
